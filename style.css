@@ -1,0 +1,223 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-weight: 500;
+    font-family: 'Epilogue',sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+header{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.index-navigation{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.index-navigation a{
+    margin-left: 20px;
+}
+.menu{
+    padding-left: 50px;
+}
+a,p,select{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+a:hover,section:hover{
+    color: hsl(0, 0%, 8%);
+}
+h1{
+    word-wrap: break-word;
+    font-size: 4.2em
+}
+.cta,.cta-1{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.cta{
+    border: 1px solid hsl(0, 0%, 41%);
+}
+.cta-1{
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+}
+.cta:hover,.cta-1:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 8%);
+}
+.features,.company{
+    padding: 20px;
+    display: flex;
+    line-height: 2.5; 
+    position: absolute;
+    border-radius: 5px;  
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 4px 6px 6px hsla(0, 0%, 41%,0.4);
+}
+.features{
+    top: 16%;
+    left: 10%;
+    width: 120px;
+    display: none;
+}
+.company{
+    top: 16%;
+    left: 20%;
+    width: 80px;
+    display: none;
+}
+.features img,.mobile-feature img{
+    padding-right: 10px;
+}
+.mobile-feature-btn img,.mobile-company-btn img{
+    padding-left: 5px;
+}
+section,footer{
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+}
+footer{
+    width: 40%;
+    margin-bottom: 5%;
+    justify-content: space-between;
+}
+main{
+    width: 70%;
+}
+main p{
+    width: 85%;
+    line-height: 2;
+    margin-bottom: 10%;
+}
+.desktop-image {
+    height: 100vh;
+}
+.mobile-image {
+    display: none;
+}
+.icon-menu{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .index-navigation{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .icon-menu{
+        display: block;
+        cursor: pointer;
+    }
+    section,footer{
+        padding: 0;
+    }
+    section{
+        flex-direction: column-reverse;
+    }
+    .desktop-image {
+        display: none;
+    }
+    .mobile-image {
+        height: 55vh;
+        display: block;
+        margin-bottom: 5%;
+    }
+    h1{
+        width: 100%;
+        font-size: 2.5em;
+    }
+    main{
+        width: 100%;
+        text-align: center;
+    }
+    main p{
+        width: 100%;
+    }
+    footer{
+        margin: 10% 0;
+    }
+    footer img{
+        padding-right: 20px;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999; 
+    }
+    #icon-close-menu{
+        padding: 10px;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+    .navigation {
+        padding: 20px;
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%; 
+        height: 100%;
+        background-color: white;
+        z-index: 1000;
+        overflow-y: auto; 
+    }
+    .navigation,.mobile-menu{
+        line-height: 2.5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .icon-close-div{
+        padding: 10px;
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .column-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-feature,.mobile-company{
+        display: none;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        flex-direction: column;
+    }
+    .mobile-feature{
+        width: 40%;
+    }
+    .center-menu{
+        margin-top: 5%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cta-2{
+        margin-top: 5%;
+        margin-bottom: 15%;
+        padding: 5px 80px;
+        border-radius: 10px;
+        border: 1px solid hsl(0, 0%, 41%);
+    }
+    .cta-2:hover{
+        background-color: transparent;
+        border: 2px solid hsl(0, 0%, 8%);
+    }
+}
