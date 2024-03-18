@@ -97,10 +97,13 @@ main p{
     line-height: 2;
     margin-bottom: 10%;
 }
+.navigation {
+    display: none;
+}
 .desktop-image {
     height: 100vh;
 }
-.mobile-image {
+.mobile-image{
     display: none;
 }
 .icon-menu{
